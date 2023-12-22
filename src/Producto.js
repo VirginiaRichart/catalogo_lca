@@ -12,23 +12,34 @@ const Producto = () => {
         // Aquí puedes realizar una llamada a una API o cargar los datos de otra manera
         // Aquí se asume un array de productos con información, incluyendo las rutas de las imágenes
         const productosData = [
-            { nombre: 'Remera 1', categoria: 'remeras', imagen: '/imagen/remeras/remera01.jpg', talle: 'S', precio: 20 },
-            { nombre: 'Remera 2', categoria: 'remeras', imagen: '/imagen/remeras/remera02.jpg', talle: 'S', precio: 30 },
-            { nombre: 'Remera 3', categoria: 'remeras', imagen: '/imagen/remeras/remera03.jpg', talle: 'S', precio: 40 },
+            { nombre: 'Remera bebe', categoria: 'remeras', imagen: '/imagen/remeras/remera01.jpg', talle: '1 al 4', precio: 5500 },
+            { nombre: 'Remera bebe', categoria: 'remeras', imagen: '/imagen/remeras/remera02.jpg', talle: '1 al 4', precio: 5500 },
+            { nombre: 'Remera bebe', categoria: 'remeras', imagen: '/imagen/remeras/remera03.jpg', talle: '1 al 4', precio: 5500 },
 
-            { nombre: 'Pantalón 1', categoria: 'pantalones', imagen: '/imagen/pantalones/pantalon01.jpg', talle: 'S', precio: 40 },
-            { nombre: 'Pantalón 2', categoria: 'pantalones', imagen: '/imagen/pantalones/pantalon02.jpg', talle: 'S', precio: 40 },
-            { nombre: 'Pantalón 3', categoria: 'pantalones', imagen: '/imagen/pantalones/pantalon03.jpg', talle: 'S', precio: 40 },
+            { nombre: 'Short bebe', categoria: 'pantalones', imagen: '/imagen/pantalones/pantalon01.jpg', talle: ' 1 al 4', precio: 4200 },
+            { nombre: 'Short bebe', categoria: 'pantalones', imagen: '/imagen/pantalones/pantalon02.jpg', talle: '1 al 4', precio: 4200 },
+            { nombre: 'Short bebe', categoria: 'pantalones', imagen: '/imagen/pantalones/pantalon03.jpg', talle: '1 al 4', precio: 4200 },
 
-            { nombre: 'Vestido 1', categoria: 'vestidos', imagen: '/imagen/vestidos/vestido01.jpg', talle: 'S', precio: 40 },
-            { nombre: 'Vestido 2', categoria: 'vestidos', imagen: '/imagen/vestidos/vestido02.jpg', talle: 'S', precio: 40 },
-            { nombre: 'Vestido 3', categoria: 'vestidos', imagen: '/imagen/vestidos/vestido03.jpg', talle: 'S', precio: 40 },
+            { nombre: 'Vestido Rosa con Mariposas', categoria: 'vestidos', imagen: '/imagen/vestidos/vestido01.jpeg', talle: '0 al 4', precio:  9500 },
+            { nombre: 'Vestido Beba Blanco flores rosas', categoria: 'vestidos', imagen: '/imagen/vestidos/vestido02.jpeg', talle: '0 al 4', precio: 9500 },
+            { nombre: 'Vestido Rojo y Blanco', categoria: 'vestidos', imagen: '/imagen/vestidos/vestido03.jpeg', talle: '0 al 4', precio: 9500 },
+            { nombre: 'Vestido Rojo y Blanco', categoria: 'vestidos', imagen: '/imagen/vestidos/vestido04.jpeg', talle: '0 al 4', precio: 9500 },
+            { nombre: 'Vestido Rosa con Mariposoas', categoria: 'vestidos', imagen: '/imagen/vestidos/vestido05.jpeg', talle: '0 al 4', precio: 9500 },
+            { nombre: 'Vestido Rosa con breteles', categoria: 'vestidos', imagen: '/imagen/vestidos/vestido06.jpeg', talle: '0 al 4', precio: 9500 },
+            { nombre: 'Vestido Blanco con Flores azules', categoria: 'vestidos', imagen: '/imagen/vestidos/vestido07.jpeg', talle: '0 al 4', precio: 9500 },
+            { nombre: 'Vestido Blanco con Flores azules', categoria: 'vestidos', imagen: '/imagen/vestidos/vestido08.jpeg', talle: '0 al 4', precio: 9500 },
+            { nombre: 'Vestido Algodon flores', categoria: 'vestidos', imagen: '/imagen/vestidos/vestido09.jpeg', talle: '1 y 4', precio: 8000 },
+            { nombre: 'Vestido Blanco con flores', categoria: 'vestidos', imagen: '/imagen/vestidos/vestido10.jpeg', talle: '0 al 4', precio: 9500 },
 
-            { nombre: 'Accesorio 1', categoria: 'accesorios', imagen: '/imagen/accesorios/accesorio01.jpg', talle: 'S', precio: 40 },
-            { nombre: 'Accesorio 2', categoria: 'accesorios', imagen: '/imagen/accesorios/accesorio02.jpg', talle: 'S', precio: 40 },
-            { nombre: 'Accesorio 3', categoria: 'accesorios', imagen: '/imagen/accesorios/accesorio03.jpg', talle: 'S', precio: 40 },
-            { nombre: 'Accesorio 4', categoria: 'accesorios', imagen: '/imagen/accesorios/accesorio04.jpg', talle: 'S', precio: 40 },
-
+            { nombre: 'Set amamantador, cuellito, sonajero, gimnasio, cambiardor', categoria: 'accesorios', imagen: '/imagen/accesorios/accesorio01.jpg', talle: 'U', precio: 15000 },
+            { nombre: 'Accesorio', categoria: 'accesorios', imagen: '/imagen/accesorios/accesorio02.jpg', talle: 'U', precio: 0 },
+            { nombre: 'Accesorio', categoria: 'accesorios', imagen: '/imagen/accesorios/accesorio03.jpg', talle: 'U', precio: 0 },
+            { nombre: 'Accesorio', categoria: 'accesorios', imagen: '/imagen/accesorios/accesorio04.jpg', talle: 'U', precio: 0 },
+            { nombre: 'Cuellito bebe', categoria: 'accesorios', imagen: '/imagen/accesorios/accesorio05.jpeg', talle: 'U', precio: 5500 },
+            { nombre: 'Cuellito bebe', categoria: 'accesorios', imagen: '/imagen/accesorios/accesorio06.jpeg', talle: 'U', precio: 5500 },
+            { nombre: 'Cuellito bebe', categoria: 'accesorios', imagen: '/imagen/accesorios/accesorio07.jpeg', talle: 'U', precio: 5500 },
+            { nombre: 'Almohada bebe', categoria: 'accesorios', imagen: '/imagen/accesorios/accesorio08.jpeg', talle: 'U', precio: 3500 },
+            { nombre: 'Cuellito bebe', categoria: 'accesorios', imagen: '/imagen/accesorios/accesorio09.jpeg', talle: 'U', precio: 5500 },
             // Agrega más productos según sea necesario
         ];
 
